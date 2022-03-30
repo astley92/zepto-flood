@@ -1,0 +1,19 @@
+<div>
+  <p>
+    Total Raised
+  </p>
+  <p>
+    <%= formatted_money(cents: donation_total) %>
+  </p>
+</div>
+
+<div>
+  <p>
+    Latest Donations
+  </p>
+  <div>
+  <% donations.each do |donation| %>
+    <%= donation.name %> - <%= formatted_money(cents: donation.amount) %>
+  <% end %>
+  </div>
+</div>
