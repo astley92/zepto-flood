@@ -29,7 +29,7 @@ RSpec.describe "Pages#Dashboard", type: :feature do
     )
 
     # TODO: This should happen automatically without refresh
-    visit("/")
+    visit(current_path)
 
     expect(page.text).not_to include("Blake Astley - $50.00")
     expect(page.text).to include("Anonymous - $500.00")
