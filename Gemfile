@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem "dry-types"
 gem "dry-struct"
 gem "figaro"
+gem "redis"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

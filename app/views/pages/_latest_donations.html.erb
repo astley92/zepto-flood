@@ -1,0 +1,8 @@
+<p>
+  Latest Donations
+</p>
+<div>
+<% donations.each do |donation| %>
+  <%= donation.name %> - <%= formatted_money(cents: donation.amount) %>
+<% end %>
+</div>

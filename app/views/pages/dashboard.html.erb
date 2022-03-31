@@ -1,19 +1,7 @@
-<div>
-  <p>
-    Total Raised
-  </p>
-  <p>
-    <%= formatted_money(cents: donation_total) %>
-  </p>
+<div id="total-amount-div">
+  <%= render "total_amount", { donation_total: donation_total } %>
 </div>
 
-<div>
-  <p>
-    Latest Donations
-  </p>
-  <div>
-  <% donations.each do |donation| %>
-    <%= donation.name %> - <%= formatted_money(cents: donation.amount) %>
-  <% end %>
-  </div>
+<div id="latest-donations-div">
+  <%= render "latest_donations", { donations: donations } %>
 </div>
