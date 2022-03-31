@@ -1,7 +1,10 @@
-<div id="total-amount-div">
-  <%= render "total_amount", { donation_total: donation_total } %>
-</div>
 
-<div id="latest-donations-div">
-  <%= render "latest_donations", { donations: donations } %>
+<div class="main-container">
+  <div class="total-amount-div" id="total-amount-div">
+    <%= render "total_amount", { donation_total: donation_total } %>
+  </div>
+
+  <div id="latest-donations-div">
+    <%= render "latest_donations", { donations: donations } %>
+  </div>
 </div>

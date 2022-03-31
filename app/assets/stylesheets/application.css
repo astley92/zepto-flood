@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+:root {
+  --zepto-green: #184a45;
+  --zepto-black: #28282b;
+  --zepto-purple: #7e69f8;
+  --zepto-light-green: #00d2ac;
+}
+
+html {
+  height: 100%;
+  font-family: 'Roboto';
+}
+
+body {
+  background-image: linear-gradient(to bottom left, var(--zepto-black) 60%, var(--zepto-green));
+}
+
+h2 {
+  color: white;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.total-amount-div {
+  margin-bottom: 100px;
+}
+
+.donation-details {
+  color: white;
+  display: inline-block;
+  font-size: larger;
+}
+
+.donation-amount {
+  font-size: larger;
+  color: white;
+  display: inline-block;
+}
+
+.light-green-text {
+  color: var(--zepto-light-green);
+}
+
+.purple-text {
+  color: var(--zepto-purple);
+}

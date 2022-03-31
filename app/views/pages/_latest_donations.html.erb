@@ -1,8 +1,7 @@
-<p>
-  Latest Donations
-</p>
+<h2 class="purple-text">Latest Donations</h2>
 <div>
-<% donations.each do |donation| %>
-  <%= donation.name %> - <%= formatted_money(cents: donation.amount) %>
-<% end %>
+  <% donations.each do |donation| %>
+    <div class="donation-details"><%= donation.name %> - </div>
+    <div class="donation-amount"><%= formatted_money(cents: donation.amount) %></div>
+  <% end %>
 </div>
