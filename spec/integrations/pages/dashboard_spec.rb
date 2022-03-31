@@ -24,7 +24,8 @@ RSpec.describe "Pages#Dashboard", type: :feature do
     Zepto::NotificationHandler.call(
       Zepto::Notifications::PaymentRequestApproved.new(
         name: "Anonymous",
-        amount: 500_00
+        amount: 500_00,
+        request_id: "something",
       )
     )
 

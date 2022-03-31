@@ -8,6 +8,7 @@ module Zepto::NotificationHandler
     Donation.create!(
       name: message.name,
       amount: message.amount,
+      request_id: message.request_id,
     )
   end
 end
