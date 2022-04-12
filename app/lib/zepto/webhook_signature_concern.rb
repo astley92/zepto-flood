@@ -19,7 +19,6 @@ module Zepto::WebhookSignatureConcern
 
   def expected_signature(timestamp)
     signed_payload = [timestamp, request.body.read].join(".")
-    # TODO: ENV var for this
     secret = Figaro.env.zepto_webhook_secret
     OpenSSL::HMAC.hexdigest('sha256', secret, signed_payload)
   end
